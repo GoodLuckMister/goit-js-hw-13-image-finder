@@ -36,3 +36,9 @@ ul.gallery {
   text-align: center;
   margin-bottom: 30px;
 }
+.load-more.is-hidden {
+  display: none;
+}
+.load-more > .spinner.is-hidden {
+  display: none;
+}
