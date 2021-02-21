@@ -5,10 +5,10 @@ export default class apiService {
     this.page = 1;
   }
 
-  fetchApiService() {
+  async fetchApiService() {
     const url = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${this.key}`;
 
-    return fetch(url)
+    return await fetch(url)
       .then(response => response.json())
       .then(data => {
         this.incrementPage();
